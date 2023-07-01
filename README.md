@@ -154,8 +154,20 @@ spec:
         - containerPort: 80
 ```
 
+Аналогом docker logs в k8s является команда kubectl logs
+Пример:
+```
+kubectl logs --tail 100 имя_пода
+```
+Для того чтобы выполнить внутри пода какую-либо команду, используется:
+```
+kubectl exec -it имя_пода команда
+```
+Пример:
+```
+kubectl exec -it nginx-ans2l bash
+```
+Документация на русском:
 
-
-
-
+https://kubernetes.io/ru/docs/home/
 

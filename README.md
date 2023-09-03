@@ -109,11 +109,13 @@ kubectl get pods -n kube-system
 - delete
 - describe
 - apply
+  
 **Объекты:**
 - pods
 - deploy
 - svc
 - secrets
+  
 **Флаги** могут различаться для различных команд, из основных необходимо указывать namespace:
 - -n
 - --all-namespaces
